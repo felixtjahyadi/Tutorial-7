@@ -1,0 +1,56 @@
+[gd_scene format=2]
+
+[node name="World 1" type="Spatial"]
+
+[node name="CSGCombiner" type="CSGCombiner" parent="."]
+use_collision = true
+
+[node name="Room 1" type="CSGBox" parent="CSGCombiner"]
+use_collision = true
+invert_faces = true
+width = 30.0
+height = 30.0
+depth = 30.0
+
+[node name="CSGBox" type="CSGBox" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.081, -8.085, 39.5 )
+invert_faces = true
+width = 24.0194
+height = 17.4797
+depth = 49.0138
+
+[node name="CSGBox2" type="CSGBox" parent="CSGCombiner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12706, -22.8267, 35.2772 )
+width = 23.2167
+height = 28.6667
+depth = 23.17
+
+[node name="OmniLight" type="OmniLight" parent="."]
+
+[node name="CSGBox" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.435, -17.067, 32 )
+use_collision = true
+invert_faces = true
+width = 4.12845
+height = 0.002
+depth = 3.56951
+
+[node name="CSGBox2" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -17, 37 )
+use_collision = true
+width = 1.53291
+height = 1.16726
+depth = 4.56383
+
+[node name="CSGBox3" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.91293, -17, 43.9608 )
+width = 3.28451
+height = 0.002
+depth = 4.01483
+
+[node name="CSGBox4" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.30807, -17, 39.3868 )
+use_collision = true
+width = 3.28451
+height = 0.002
+depth = 4.01483
